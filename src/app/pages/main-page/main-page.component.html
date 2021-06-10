@@ -1,0 +1,21 @@
+<app-toolbar></app-toolbar>
+<div class="main-page">
+  <div class="empty-space"></div>
+  <app-success-toast
+    *ngIf="!searchTrigger"
+    [message]="'Welcome to OMDB Search, search something in the bar above !'"
+  ></app-success-toast>
+  <app-error-toast
+    *ngIf="searchTrigger && !searchResponse"
+    [message]="searchErrorMessage"
+  ></app-error-toast>
+  <div class="card-container" *ngIf="movieData && movieData.length">
+    <div class="detail-card" *ngIf="showDetailedMovie">
+      <app-movie-detail-view></app-movie-detail-view>
+    </div>
+    <ng-container *ngFor="let movie of movieData">
+      <app-card [movie]="movie"></app-card>
+    </ng-container>
+  </div>
+  <div class="empty-space"></div>
+</div>

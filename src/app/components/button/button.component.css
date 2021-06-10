@@ -1,0 +1,14 @@
+button {
+  flex: 1;
+  background: var(--button-primary);
+  font-size: var(--font-small);
+  border: none;
+  border-color: var(--button-primary);
+  cursor: pointer;
+  color: var(--white);
+  font-weight: var(--font-bold);
+  height: var(--button-height);
+  border-radius: var(--radius);
+  outline: none;
+  padding: var(--normal) var(--large);
+}

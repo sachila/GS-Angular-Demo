@@ -1,0 +1,14 @@
+<div class="topnav">
+  <form (ngSubmit)="searchMovies()">
+    <div class="header"><h1>OMDB Search</h1></div>
+    <div class="search-label-container">
+      <span class="search-label">Search a movie</span>
+    </div>
+    <div class="search-input-container">
+      <input type="text" name="search" [(ngModel)]="searchInput" />
+      <div class="button-container">
+        <app-button [label]="'SEARCH'"></app-button>
+      </div>
+    </div>
+  </form>
+</div>

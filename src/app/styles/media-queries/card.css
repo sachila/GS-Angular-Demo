@@ -1,0 +1,6 @@
+/* iphone size */
+@media screen and (max-width: 400px) {
+  .card {
+    height: var(--card-mobile-height) !important;
+  }
+}

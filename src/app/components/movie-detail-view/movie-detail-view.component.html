@@ -1,0 +1,36 @@
+<div class="card">
+  <div class="img-container">
+    <img [src]="movie?.Poster" alt="Avatar" />
+  </div>
+  <div class="main-container">
+    <div class="detail-container">
+      <h4>
+        {{ movie?.Title }}
+      </h4>
+      <h5>Plot</h5>
+      <p>
+        {{ movie?.Plot }}
+      </p>
+      <h5>Actors</h5>
+      <p>
+        {{ movie?.Actors }}
+      </p>
+
+      <ng-container *ngIf="movie && movie.Ratings && movie.Ratings.length">
+        <h5>Ratings</h5>
+        <ul>
+          <li *ngFor="let rating of movie.Ratings">
+            {{ rating?.Source }} - {{ rating?.Value }}
+          </li>
+        </ul>
+      </ng-container>
+    </div>
+    <app-divider></app-divider>
+    <app-bottom-container
+      (onClick)="closePreview()"
+      [label]="'CLOSE'"
+      [year]="movie?.Year"
+      [showButton]="showButton"
+    ></app-bottom-container>
+  </div>
+</div>

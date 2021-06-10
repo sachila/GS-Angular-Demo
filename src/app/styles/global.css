@@ -1,0 +1,49 @@
+::ng-deep :root {
+  --red: red;
+  --light-red: #f0d0d773;
+  --dark-red: #ea657d;
+
+  --green: green;
+  --light-green: #b7ecb7;
+  --dark-green: #0e5f0e;
+
+  --button-primary: #0d86e6;
+
+  --white: white;
+  --dark-white: #f3f3f3;
+
+  --grey: grey;
+  --light-grey: #dedada;
+  --dark-grey: #484545;
+
+  --light-blue: #ecf0f1;
+
+  --border-shadow: rgba(0, 0, 0, 0.2);
+
+  /* sizes */
+  --card-topbar: 70px;
+  --card-min-width: 410px;
+  --card-min-height: 245px;
+  --button-height: 30px;
+  --card-flex-size: 280px;
+
+  /* mobile sizes */
+  --card-mobile-width: 300px;
+  --card-mobile-height: 180px;
+
+  /* screens */
+  --iphone: 375px;
+
+  /* standards */
+  --small: 5px;
+  --normal: 10px;
+  --large: 15px;
+  --xl-large: 30px;
+  --radius: 4px;
+
+  /* fonts */
+  --font-bold: 600;
+  --font-small: 11px;
+  --font-paragraph: 12.5px;
+  --font-normal: 14px;
+}

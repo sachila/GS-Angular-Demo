@@ -1,0 +1,29 @@
+@import "../../styles/media-queries/card-container.css";
+
+app-error-toast {
+  flex: 2.1;
+}
+app-success-toast {
+  flex: 2.1;
+}
+.main-page {
+  display: flex;
+  justify-content: center;
+}
+.empty-space {
+  flex: 1;
+}
+.detail-card {
+  grid-column: 1 / -1;
+}
+
+.card-container {
+  flex: 2;
+  display: grid;
+  gap: var(--large);
+  padding: var(--xl-large);
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--card-min-width), var(--card-flex-size))
+  );
+}

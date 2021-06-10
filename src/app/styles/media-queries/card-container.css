@@ -1,0 +1,9 @@
+/* iphone size */
+@media screen and (max-width: 400px) {
+  .card-container {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(var(--card-mobile-width), var(--card-flex-size))
+    ) !important;
+  }
+}

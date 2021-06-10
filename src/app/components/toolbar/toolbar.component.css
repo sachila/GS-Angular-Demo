@@ -1,0 +1,66 @@
+@import "../../styles/media-queries/topbar.css";
+
+.topnav {
+  padding-bottom: var(--small);
+  height: var(--card-topbar);
+  box-shadow: -1px 1px 3px 3px rgb(0 0 0 / 20%);
+  transition: 0.3s;
+}
+
+.topnav input[type="text"] {
+  margin: var(--large);
+  font-size: var(--font-normal);
+  border: hidden;
+  border-bottom: solid 1px var(--light-grey);
+}
+
+*:focus {
+  outline: none;
+}
+
+.topnav form {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.header {
+  flex: 9;
+  text-align: end;
+}
+
+.header h1 {
+  padding: var(--small);
+}
+
+.search-label-container {
+  padding-top: var(--normal);
+  display: table;
+  height: 100%;
+  flex: 5;
+  text-align: end;
+}
+
+.search-label-container .search-label {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: var(--font-normal);
+  font-weight: var(--font-bold);
+  color: var(--grey);
+}
+
+.search-input-container {
+  padding-top: var(--normal);
+  flex: 10;
+  display: inherit;
+}
+
+.search-input-container .button-container {
+  display: table;
+  height: 100%;
+}
+
+.search-input-container .button-container app-button {
+  display: table-cell;
+  vertical-align: middle;
+}

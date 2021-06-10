@@ -1,0 +1,13 @@
+.bottom-container {
+  font-size: var(--font-normal);
+  margin: var(--normal);
+  color: var(--light-grey);
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-container h5 {
+  flex: 5;
+  margin-top: var(--small) !important;
+  margin-bottom: var(--normal) !important;
+}

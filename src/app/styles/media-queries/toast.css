@@ -1,0 +1,6 @@
+/* tab size */
+@media screen and (max-width: 1040px) {
+  .text {
+    padding-top: 0px !important;
+  }
+}

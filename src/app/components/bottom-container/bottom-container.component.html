@@ -1,0 +1,8 @@
+<div class="bottom-container">
+  <h5>{{ year }}</h5>
+  <app-button
+    *ngIf="showButton"
+    [label]="label"
+    (click)="onClick.emit()"
+  ></app-button>
+</div>

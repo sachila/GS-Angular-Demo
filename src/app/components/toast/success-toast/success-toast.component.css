@@ -1,0 +1,17 @@
+@import "../../../styles/global.css";
+@import "../../../styles/media-queries/toast.css";
+
+.container {
+  height: var(--card-topbar);
+  margin-top: var(--normal);
+  background-color: var(--light-blue);
+  text-align: center;
+  align-items: center;
+  border: 1px solid var(--light-blue);
+}
+
+.text {
+  color: var(--dark-grey);
+  font-weight: var(--font-bold);
+  padding-top: 1em;
+}

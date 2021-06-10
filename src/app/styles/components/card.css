@@ -1,0 +1,11 @@
+@import "../media-queries/card.css";
+
+.card {
+  box-shadow: 0 var(--small) var(--normal) 0 var(--border-shadow);
+  transition: 0.3s;
+  display: flex;
+  height: var(--card-min-height);
+}
+.card:hover {
+  box-shadow: 0 var(--normal) var(--large) 0 var(--border-shadow);
+}

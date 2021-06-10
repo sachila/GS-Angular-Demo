@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="img-container">
+    <img [src]="movie?.Poster" alt="Avatar" />
+  </div>
+  <div class="main-container">
+    <div class="title-container">
+      <h4>
+        {{ movie?.Title }}
+      </h4>
+    </div>
+    <app-divider></app-divider>
+    <app-bottom-container
+      (onClick)="openDetailView()"
+      [label]="'DETAILS'"
+      [year]="movie?.Year"
+    ></app-bottom-container>
+  </div>
+</div>
